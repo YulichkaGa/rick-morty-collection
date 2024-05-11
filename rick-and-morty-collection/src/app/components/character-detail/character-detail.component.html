@@ -1,0 +1,11 @@
+<div *ngIf="character$ | async as character; else loading" style="text-align: center;">
+  <h2>{{ character.name }}</h2>
+  <img [src]="character.image" alt="{{ character.name }}" style="width: 100px; height: auto;">
+  <p>Status: {{ character.status }}</p>
+  <p>Species: {{ character.species }}</p>
+  <p>Location: {{ character.location?.name }}</p>
+  <!-- Add more fields as needed -->
+</div>
+<ng-template #loading>
+  <p>Loading...</p>
+</ng-template>

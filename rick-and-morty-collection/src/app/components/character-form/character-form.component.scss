@@ -1,0 +1,64 @@
+.character-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);  // A warm gradient background
+
+  .character-form {
+    width: 100%;
+    max-width: 360px;  // A narrower width for a more focused form
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  // A softer shadow
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);  // A slightly more pronounced shadow on hover
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        color: #333;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 0.9rem;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: #ff7e5f;  // A border color that matches the gradient
+          outline: none;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #ff7e5f;  // Button color that matches the gradient
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e7664d;  // A darker shade for the hover state
+      }
+    }
+  }
+}
